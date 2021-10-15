@@ -51,9 +51,8 @@ class Resume extends Component {
             My Updated CV
             </a>
           </Cell>
-          
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
+            <h2>EDUCATION</h2>
             <Education
               startYear={2017}
               endYear={2020}
@@ -61,7 +60,7 @@ class Resume extends Component {
               degreeName={"Bsc In Software Engineering"}
             />
             <hr style={{ borderTop: "3px solid #e22947" }} />
-            <h2>Experience</h2>
+            <h2>EXPERIENCE</h2>
             <Experience
               startYear={"December 2020"}
               endYear={"January 2020"}
