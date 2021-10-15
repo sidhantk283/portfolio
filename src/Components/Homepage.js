@@ -24,7 +24,6 @@ class Homepage extends Component {
                 {/* LinkedIn */}
                 <a
                   href="linkedin.com/in/sidhantkarbotkar/"
-                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   {" "}

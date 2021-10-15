@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import Education from "./Education";
-import Experience from "./Experience";
+//import Experience from "./Experience";
+import Activities from "./Activities";
 import Skills from "./Skills";
 
 class Resume extends Component {
@@ -51,51 +52,103 @@ class Resume extends Component {
             My Updated CV
             </a>
           </Cell>
+          {/* Experience
+            <Experience
+              startYear={""}
+              endYear={""}
+              jobName={""}
+              jobDesc={""}
+            /> */}
+
           <Cell className="resume-right-col" col={8}>
-            <h2>EDUCATION</h2>
-            <Education
-              startYear={2017}
-              endYear={2020}
-              schoolName={"Daffodil International University"}
-              degreeName={"Bsc In Software Engineering"}
+            {/* Activities */}
+            <h2>ACTIVITIES</h2>
+            <Activities
+              time={"July 2021"}
+              title={"UI/UX (Javascript) Virtual Internship"}
+              link={"https://drive.google.com/file/d/1gwUUbbzypc5zGrNLutUpfk5t3mf41J6n/view?usp=sharing"}
+              desc={"Suven Consultants & Technology Pvt. Ltd."}
             />
+
+            <Activities
+              time={"January 2021"}
+              title={"UI/UX (Html5 + CSS3) Virtual Internship"}
+              link={"https://drive.google.com/file/d/1aS9COHfOa17ZH52--MPO85fnzQLuyUCs/view?usp=sharing"}
+              desc={"Suven Consultants & Technology Pvt. Ltd."}
+            />
+            
             <hr style={{ borderTop: "3px solid #e22947" }} />
-            <h2>EXPERIENCE</h2>
-            <Experience
-              startYear={"December 2020"}
-              endYear={"January 2020"}
-              jobName={"Internee"}
-              jobDesc={
-                "That was a part-time Internee. And I learnt lot of tech things from this company I now had a chance to test my knowledge in the real world through an internship."
-              }
+            <h2>TRAININGS/ COURSES</h2>
+            <Activities
+              time={"April 2018"}
+              title={"Computer Hardware, Troubleshoot and Maintenance"}
+              link={"https://drive.google.com/file/d/1y4YguXGrMF6ak6CBOTh-Y1GGWpRtKUzB/view?usp=sharing"}
+              desc={"Dnyanprassarak Mandal's College, Assagao"}
             />
-            <Experience
-              startYear={"Spring 2019"}
-              endYear={"Fall 2019"}
-              jobName={"Trainer For Junior Solver"}
-              jobDesc={"Teach C Programming Language 1st year students"}
+
+            <Activities
+              time={"Mar 2018"}
+              title={"Python"}
+              link={"https://drive.google.com/file/d/1yB0ByXYe0yzN_i25QSxu7LC_KwCu1EKx/view?usp=sharing"}
+              desc={"Spoken Tutorial, IIT Bombay"}
             />
-            <Experience
-              startYear={"Spring 2020"}
-              endYear={"Summer 2020"}
-              jobName={"ACM Problem Setter"}
-              jobDesc={
-                "Problem setter on DIU Take OFF Programming Contest And Several others contest on Daffodil"
-              }
+
+            <Activities
+              time={"Mar 2017"}
+              title={"Gimp Image Editing Software"}
+              link={"https://drive.google.com/file/d/1y3QUHGvh5UhA6fsN-TVyjpex-y0IDj16/view?usp=sharing"}
+              desc={"Spoken Tutorial, IIT Bombay"}
+            />
+
+            <Activities
+              time={"Jan 2017"}
+              title={"C programming"}
+              link={"https://drive.google.com/file/d/1xxw-FYKYlBPOaKjSvsGTpeA2tWGfavvO/view?usp=sharing"}
+              desc={"Spoken Tutorial, IIT Bombay"}
             />
 
             <hr style={{ borderTop: "3px solid #e22947" }} />
-            <h2>Skills</h2>
-            <Skills skill={"HTML/CSS"} progress={80} />
-            <Skills skill={"ReactJS"} progress={60} />
-            <Skills skill={"Angular"} progress={70} />
-            <Skills skill={"C#"} progress={90} />
-            <Skills skill={"Asp .Net Core"} progress={90} />
-            <Skills skill={"SQL Server"} progress={80} />
+            
+            {/* Education */}
+            <h2>EDUCATION</h2>
+            <Education
+              startYear={2019}
+              endYear={'Present'}
+              schoolName={"Goa University, Panjim, Goa"}
+              degreeName={"Master of Computer Applications"}
+              class={"Appearing"}
+            />
+            <Education
+              startYear={2016}
+              endYear={2019}
+              schoolName={"Dnyanprassarak Mandal's College, Assagao, Goa"}
+              degreeName={"BSc In Computer Science"}
+              class={"Distinction"}
+            />
+            <Education
+              startYear={2014}
+              endYear={2016}
+              schoolName={"Govt. HSSc, Sanquelim, Goa"}
+              degreeName={"HSSc In Science"}
+              class={"First Class"}
+            />
+
+            {/* skills */}
             <hr style={{ borderTop: "3px solid #e22947" }} />
-            <h2>Achievments</h2>
-            <h6>6th at SWE Junior Programming Contest (03/2019)</h6>
-            <h6>9th Position at DIU TakeOff Programming Contest (04/2017)</h6>
+            <h2>SKILLS</h2>
+            <Skills skill={"HTML/CSS"} progress={90} />
+            <Skills skill={"JavaScript"} progress={80} />
+            <Skills skill={"React.js"} progress={60} />
+            <Skills skill={"Angular"} progress={40} />
+            <Skills skill={"Python"} progress={50} />
+            <Skills skill={"Laravel"} progress={90} />
+            <Skills skill={"Node.js"} progress={30} />
+            <Skills skill={"Unity3D"} progress={80} />
+
+            <hr style={{ borderTop: "3px solid #e22947" }} />
+            <h2>ACHIEVEMENTS</h2>
+            <h6>First Place for Gitty Games - Multi-game Android App ( <a style={{textDecoration:'none'}} href="https://drive.google.com/file/d/1y2tCEpV7On9Js-zyAWsY_vDZEcvr-ObI/view?usp=sharing" target="_blank">Certificate</a> )</h6>
+            <p>- at Science Expo held in DMC's College, Assagao</p>
           </Cell>
         </Grid>
       </div>

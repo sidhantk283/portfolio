@@ -4,13 +4,16 @@ import { Grid, Cell } from 'react-mdl';
 class Education extends Component{
     render(){
         return(
-            <Grid>
-                <Cell col={4}>
-                    <p>{this.props.startYear} - {this.props.endYear}</p>
+            <Grid className='resume-content'>
+                <Cell col={2} style={{padding:"5px"}}>
+                <p>{this.props.startYear} - {this.props.endYear}</p>
                 </Cell>
-                <Cell col={8}>
-                    <h4 style={{marginTop: '0px'}}>{this.props.degreeName}</h4>
+                <Cell col={7}>
+                    <h4 className="resume-content-title">{this.props.degreeName}</h4>
                     <p>{this.props.schoolName}</p>
+                </Cell>
+                <Cell col={3} style={{padding:"5px"}}>
+                    <p>{this.props.class}</p>
                 </Cell>
             </Grid>
         );
