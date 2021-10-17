@@ -13,7 +13,7 @@ class Aboutme extends Component {
           />
           <h1 style={{fontSize: '50px'}}>SIDHANT KARBOTKAR</h1>
           <p style={{textAlign: 'justify'}}>
-            helloo
+          Sidhant here, student of Master of Compuer Application final year at Goa University. Solving real life problems using computers is my thing.
           </p>
         </div>
       </div>

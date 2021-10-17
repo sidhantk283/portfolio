@@ -1,3 +1,12 @@
+/* .demo-big-content {
+  background: #de6161;
+  background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+} */
+
+.page-content {
+  background-color: red;
+}
+
 .homepage-grid {
   /* background: #de6161;
   background: -webkit-linear-gradient(
@@ -48,10 +57,15 @@
   margin: auto;
 }
 
+.material-icons {
+  color: white;
+}
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 300%;
   font-weight: bold;
   color: #fff;
+  padding: 1%;
+  margin-bottom: 0;
   cursor: default;
 }
 
@@ -85,24 +99,43 @@
   font-size: 5em;
 }
 
-@media only screen and (max-width: 768px) {
-  .social-links {
-    width: 90%;
-  }
-
-  .social-links i {
-    font-size: 3em;
-  }
-}
-
+/* project */
 .projects-grid {
-  margin: auto;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+  align-items: baseline;
 }
 
 .project-item {
-  float: left;
-  margin: 50px 55px 0px 50px;
+  margin-bottom: 5%;
+}
+
+.project-item:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+
+  -webkit-transition: transform 1.05s ease-in-out;
+  -moz-transition: transform 1.05s ease-in-out;
+  -ms-transition: transform 1.05s ease-in-out;
+}
+
+.card-title {
+  height: 180px;
+}
+
+.card-text {
+  padding: 0;
+}
+
+.card-text > h4 {
+  margin: 0;
+  font-weight: bold;
 }
 
 .contact-body {
@@ -165,7 +198,7 @@
 
 .resume-right-col {
   background: #010b36;
-  padding: 0px 50px 70px 50px;
+  padding: 0px 5%;
   padding-top: 0px;
   margin-top: 0px;
   border-radius: 50px;
@@ -189,4 +222,31 @@
 
 .resume-content-title > a {
   text-decoration: none;
+}
+
+.thick-hr {
+  border-top: 3px solid #e22947;
+}
+
+.dotted-hr {
+  width: 70%;
+  margin: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+@media only screen and (max-width: 768px) {
+  .social-links {
+    width: 90%;
+  }
+
+  .social-links i {
+    font-size: 3em;
+  }
+
+  .resume-right-col {
+    padding: 1%;
+  }
+  .project-item {
+    margin-bottom: 10%;
+  }
 }

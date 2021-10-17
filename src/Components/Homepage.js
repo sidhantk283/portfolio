@@ -5,7 +5,9 @@ class Homepage extends Component {
   render() {
     return (
       <div style={{ width: "100%", margin: "auto"}}>
-        <Grid className="homepage-grid" style={{ backgroundImage: "url(images/bg1.jpg)",overflowY : 'auto'}}>
+        <Grid className="homepage-grid"
+        style={{ backgroundImage: "url(images/bg1.jpg)",overflowY : 'auto'}}
+        >
           <Cell col={12}>
             <div className="profile-img-border">
               <img

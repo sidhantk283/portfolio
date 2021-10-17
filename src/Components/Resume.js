@@ -69,7 +69,7 @@ class Resume extends Component {
               link={"https://drive.google.com/file/d/1gwUUbbzypc5zGrNLutUpfk5t3mf41J6n/view?usp=sharing"}
               desc={"Suven Consultants & Technology Pvt. Ltd."}
             />
-
+            <hr className="dotted-hr"/>
             <Activities
               time={"January 2021"}
               title={"UI/UX (Html5 + CSS3) Virtual Internship"}
@@ -77,7 +77,7 @@ class Resume extends Component {
               desc={"Suven Consultants & Technology Pvt. Ltd."}
             />
             
-            <hr style={{ borderTop: "3px solid #e22947" }} />
+            <hr className="thick-hr"/>
             <h2>TRAININGS/ COURSES</h2>
             <Activities
               time={"April 2018"}
@@ -85,6 +85,8 @@ class Resume extends Component {
               link={"https://drive.google.com/file/d/1y4YguXGrMF6ak6CBOTh-Y1GGWpRtKUzB/view?usp=sharing"}
               desc={"Dnyanprassarak Mandal's College, Assagao"}
             />
+            
+            <hr className="dotted-hr"/>
 
             <Activities
               time={"Mar 2018"}
@@ -93,12 +95,16 @@ class Resume extends Component {
               desc={"Spoken Tutorial, IIT Bombay"}
             />
 
+            <hr className="dotted-hr"/>
+
             <Activities
               time={"Mar 2017"}
               title={"Gimp Image Editing Software"}
               link={"https://drive.google.com/file/d/1y3QUHGvh5UhA6fsN-TVyjpex-y0IDj16/view?usp=sharing"}
               desc={"Spoken Tutorial, IIT Bombay"}
             />
+
+            <hr className="dotted-hr"/>
 
             <Activities
               time={"Jan 2017"}
@@ -107,7 +113,7 @@ class Resume extends Component {
               desc={"Spoken Tutorial, IIT Bombay"}
             />
 
-            <hr style={{ borderTop: "3px solid #e22947" }} />
+            <hr className="thick-hr"/>
             
             {/* Education */}
             <h2>EDUCATION</h2>
@@ -118,6 +124,9 @@ class Resume extends Component {
               degreeName={"Master of Computer Applications"}
               class={"Appearing"}
             />
+
+            <hr className="dotted-hr"/>
+            
             <Education
               startYear={2016}
               endYear={2019}
@@ -125,6 +134,9 @@ class Resume extends Component {
               degreeName={"BSc In Computer Science"}
               class={"Distinction"}
             />
+            
+            <hr className="dotted-hr"/>
+            
             <Education
               startYear={2014}
               endYear={2016}
@@ -134,7 +146,7 @@ class Resume extends Component {
             />
 
             {/* skills */}
-            <hr style={{ borderTop: "3px solid #e22947" }} />
+            <hr className="thick-hr"/>
             <h2>SKILLS</h2>
             <Skills skill={"HTML/CSS"} progress={90} />
             <Skills skill={"JavaScript"} progress={80} />
@@ -145,7 +157,7 @@ class Resume extends Component {
             <Skills skill={"Node.js"} progress={30} />
             <Skills skill={"Unity3D"} progress={80} />
 
-            <hr style={{ borderTop: "3px solid #e22947" }} />
+            <hr className="thick-hr"/>
             <h2>ACHIEVEMENTS</h2>
             <h6>First Place for Gitty Games - Multi-game Android App ( <a style={{textDecoration:'none'}} href="https://drive.google.com/file/d/1y2tCEpV7On9Js-zyAWsY_vDZEcvr-ObI/view?usp=sharing" target="_blank">Certificate</a> )</h6>
             <p>- at Science Expo held in DMC's College, Assagao</p>
