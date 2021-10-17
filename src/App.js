@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="demo-big-content" style={{ backgroundImage: "url(images/bg1.jpg)"}}>
+    <div className="demo-big-content">
       <Layout>
         <Header
           className="header-color"
