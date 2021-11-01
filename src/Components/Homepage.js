@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
+import Aboutme from "./Aboutme";
+import Contact from "./Contact";
 
 class Homepage extends Component {
+  
   render() {
     return (
       <div style={{ width: "100%", margin: "auto"}}>
-        <Grid className="homepage-grid"
-        style={{ backgroundImage: "url(images/bg1.jpg)",overflowY : 'auto'}}
-        >
+        <Grid className="homepage-grid" className="demo-grid-ruler">
           <Cell col={12}>
             <div className="profile-img-border">
               <img
@@ -85,6 +86,9 @@ class Homepage extends Component {
               </div>
             </div>
           </Cell>
+        </Grid>
+        <Grid className="demo-grid-1">
+            {/* <Contact /> */}
         </Grid>
       </div>
     );

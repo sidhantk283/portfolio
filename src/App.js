@@ -10,7 +10,7 @@ function App() {
       <Layout>
         <Header
           className="header-color"
-          title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Home</Link>}
+          title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Sidhant Karbotkar</Link>}
           scroll>
             <Navigation>
             <Link to="/Resume">Resume</Link>
@@ -27,7 +27,9 @@ function App() {
             <Link to="/Contact">Contact</Link>
           </Navigation>
         </Drawer>
-        <Content>
+        <Content
+          style={{ backgroundImage: "url(images/bg1.jpg)",overflowY : 'auto'}}
+        >
           <div className="page-content"></div>
           <Main />
         </Content>

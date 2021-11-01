@@ -18,7 +18,7 @@ class Resume extends Component {
   render() {
     return (
       <div>
-        <Grid className="resume-gird">
+        <Grid className="resume-grid">
           <Cell col={4}>
             <Grid>
               <img
