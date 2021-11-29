@@ -9,7 +9,7 @@ class Activities extends Component{
                     <p>{this.props.time}</p>
                 </Cell>
                 <Cell col={10}>
-                    <h4 className="resume-content-title">{this.props.title} (<a href={this.props.link} target="_blank"> Certificate </a>)</h4>
+                    <h4 className="resume-content-title">{this.props.title} (<a href={this.props.link} rel="noopener noreferrer" target="_blank"> Certificate </a>)</h4>
                     <p>- {this.props.desc}</p>
                 </Cell>
             </Grid>

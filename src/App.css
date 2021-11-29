@@ -3,8 +3,12 @@
   background: -webkit-linear-gradient(to right, #2657eb, #de6161);
 } */
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .page-content {
-  background-color: red;
 }
 
 .homepage-grid {
@@ -22,7 +26,7 @@
   text-align: center;
   position: fixed;
   width: 100%;
-  height: auto;
+  height: 100vl;
 }
 
 .header-color {
@@ -30,7 +34,6 @@
 }
 
 .header-color > title {
-  color: red;
 }
 
 .profile-img-border {
@@ -133,19 +136,13 @@
 
 .project-item {
   margin-bottom: 5%;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-item:hover {
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
   transform: scale(1.05);
-
-  -webkit-transition: transform 1.05s ease-in-out;
-  -moz-transition: transform 1.05s ease-in-out;
-  -ms-transition: transform 1.05s ease-in-out;
+  border-radius: 10px;
 }
 
 .card-title {
@@ -178,10 +175,21 @@
   font-weight: bolder;
 }
 
+.card-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-actions button {
+  transition: all 0.2s ease-in-out;
+}
 .items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  cursor: default;
 }
 
 .items div {
@@ -214,15 +222,6 @@
   margin-bottom: 50px;
 }
 
-/* .contact-grid h2 {
-  font-family: "Anton", sans-serif;
-}
-
-.contact-grid p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: bold;
-} */
-
 .contact-grid hr {
   border-top: 5px dotted black;
   margin: auto;
@@ -243,12 +242,7 @@
   background: -webkit-linear-gradient(rgb(1, 0, 34), rgb(0, 119, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.grdtext:hover {
-  /* background: -webkit-linear-gradient((rgb(0, 119, 255), rgb(1, 0, 34)));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  transition: all 0.2s ease-in-out;
 }
 
 .resume-right-col {
@@ -310,10 +304,11 @@
 
   .banner-text {
     background-color: rgba(211, 211, 211, 0.288);
+    width: 95%;
   }
 
   .social-links i {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 
   .resume-right-col {

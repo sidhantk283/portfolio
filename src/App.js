@@ -15,16 +15,16 @@ function App() {
             <Navigation>
             <Link to="/Resume">Resume</Link>
             <Link to="/Projects">Projects</Link>
-            <Link to="/Aboutme">About Me</Link>
-            <Link to="/Contact">Contact</Link>
+            {/* <Link to="/Aboutme">About Me</Link>
+            <Link to="/Contact">Contact</Link> */}
           </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">My Portfolio</Link>}>
           <Navigation>
             <Link to="/Resume">Resume</Link>
             <Link to="/Projects">Projects</Link>
-            <Link to="/Aboutme">About Me</Link>
-            <Link to="/Contact">Contact</Link>
+            {/* <Link to="/Aboutme">About Me</Link>
+            <Link to="/Contact">Contact</Link> */}
           </Navigation>
         </Drawer>
         <Content

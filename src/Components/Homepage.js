@@ -1,14 +1,25 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
-import Aboutme from "./Aboutme";
-import Contact from "./Contact";
+// import Aboutme from "./Aboutme";
+// import Contact from "./Contact";
+// import SimpleImageSlider from "react-simple-image-slider";
 
 class Homepage extends Component {
-  
+  constructor(props){
+    super(props);
+    this.state = {
+      height : window.innerHeight,
+      width : window.innerWidth
+    }
+  }
+  images = [
+    { url: "images/bg1.jpg" },
+    { url: "images/bg2.jpg" }
+  ]
   render() {
     return (
       <div style={{ width: "100%", margin: "auto"}}>
-        <Grid className="homepage-grid" className="demo-grid-ruler">
+        <Grid className="homepage-grid demo-grid-ruler" style={{marginTop:"10vh",height:"90vh"}}>
           <Cell col={12}>
             <div className="profile-img-border">
               <img
@@ -26,7 +37,8 @@ class Homepage extends Component {
               <div className="social-links">
                 {/* LinkedIn */}
                 <a
-                  href="linkedin.com/in/sidhantkarbotkar/"
+                  href="https://linkedin.com/in/sidhantkarbotkar/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   {" "}
@@ -88,7 +100,13 @@ class Homepage extends Component {
           </Cell>
         </Grid>
         <Grid className="demo-grid-1">
-            {/* <Contact /> */}
+        {/* <SimpleImageSlider
+          width={"90%"}
+          height={"20vh"}
+          images={this.images}
+          showBullets={true}
+          showNavs={true}
+        /> */}
         </Grid>
       </div>
     );

@@ -159,7 +159,7 @@ class Resume extends Component {
 
             <hr className="thick-hr"/>
             <h2>ACHIEVEMENTS</h2>
-            <h6>First Place for Gitty Games - Multi-game Android App ( <a style={{textDecoration:'none'}} href="https://drive.google.com/file/d/1y2tCEpV7On9Js-zyAWsY_vDZEcvr-ObI/view?usp=sharing" target="_blank">Certificate</a> )</h6>
+            <h6>First Place for Gitty Games - Multi-game Android App ( <a style={{textDecoration:'none'}} href="https://drive.google.com/file/d/1y2tCEpV7On9Js-zyAWsY_vDZEcvr-ObI/view?usp=sharing" rel="noopener noreferrer" target="_blank">Certificate</a> )</h6>
             <p>- at Science Expo held in DMC's College, Assagao</p>
           </Cell>
         </Grid>
